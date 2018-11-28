@@ -1,0 +1,18 @@
+OrdererOrgs:
+    - Name: Orderer
+      Domain: cmbc.com
+      Specs:
+            - Hostname: orderer
+PeerOrgs:
+    - Name: Org1
+      Domain: org1.cmbc.com
+      Template:
+            Count: 2
+      Users:
+            Count: 3
+    - Name: Org2
+      Domain: org2.cmbc.com
+      Template:
+          Count: 2
+      Users:
+          Count: 2

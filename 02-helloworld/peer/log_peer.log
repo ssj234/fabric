@@ -1,0 +1,180 @@
+2018-11-27 23:47:32.390 CST [nodeCmd] serve -> INFO 001[0m Starting peer:
+ Version: 1.1.0
+ Go version: go1.11.1
+ OS/Arch: linux/amd64
+ Experimental features: false
+ Chaincode:
+  Base Image Version: 0.4.6
+  Base Docker Namespace: hyperledger
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+
+2018-11-27 23:47:32.390 CST [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+2018-11-27 23:47:32.390 CST [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+2018-11-27 23:47:32.415 CST [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+2018-11-27 23:47:32.415 CST [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+2018-11-27 23:47:32.416 CST [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.16.0.4:7051
+2018-11-27 23:47:32.417 CST [peer] func1 -> INFO 007[0m Returning peer0.org1.cmbc.com:7051
+2018-11-27 23:47:32.421 CST [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.16.0.4:7051
+2018-11-27 23:47:32.422 CST [peer] func1 -> INFO 009[0m Returning peer0.org1.cmbc.com:7051
+2018-11-27 23:47:32.425 CST [nodeCmd] computeChaincodeEndpoint -> INFO 00a[0m Entering computeChaincodeEndpoint with peerHostname: peer0.org1.cmbc.com
+2018-11-27 23:47:32.429 CST [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Exit with ccEndpoint: peer0.org1.cmbc.com:7052
+2018-11-27 23:47:32.432 CST [eventhub_producer] start -> INFO 00c[0m Event processor started
+2018-11-27 23:47:32.432 CST [chaincode] NewChaincodeSupport -> INFO 00d[0m Chaincode support using peerAddress: peer0.org1.cmbc.com:7052
+2018-11-27 23:47:32.432 CST [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+2018-11-27 23:47:32.432 CST [sccapi] registerSysCC -> INFO 00f[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+2018-11-27 23:47:32.432 CST [sccapi] registerSysCC -> INFO 010[0m system chaincode escc(github.com/hyperledger/fabric/core/scc/escc) registered
+2018-11-27 23:47:32.432 CST [sccapi] registerSysCC -> INFO 011[0m system chaincode vscc(github.com/hyperledger/fabric/core/scc/vscc) registered
+2018-11-27 23:47:32.433 CST [sccapi] registerSysCC -> INFO 012[0m system chaincode qscc(github.com/hyperledger/fabric/core/chaincode/qscc) registered
+2018-11-27 23:47:32.437 CST [gossip/service] func1 -> INFO 013[0m Initialize gossip with endpoint peer0.org1.cmbc.com:7051 and bootstrap set [127.0.0.1:7051]
+2018-11-27 23:47:32.441 CST [msp] DeserializeIdentity -> INFO 014[0m Obtaining identity
+2018-11-27 23:47:32.443 CST [gossip/discovery] NewDiscoveryService -> INFO 015[0m Started {peer0.org1.cmbc.com:7051 [] [209 156 40 95 86 111 90 129 105 108 3 192 152 88 51 244 136 206 227 80 66 208 2 221 203 230 35 91 122 150 165 240] peer0.org1.cmbc.com:7051 <nil>} incTime is 1543333652443141371
+2018-11-27 23:47:32.443 CST [gossip/gossip] NewGossipService -> INFO 016[0m Creating gossip service with self membership of {peer0.org1.cmbc.com:7051 [] [209 156 40 95 86 111 90 129 105 108 3 192 152 88 51 244 136 206 227 80 66 208 2 221 203 230 35 91 122 150 165 240] peer0.org1.cmbc.com:7051 <nil>}
+2018-11-27 23:47:32.455 CST [gossip/gossip] start -> INFO 017[0m Gossip instance peer0.org1.cmbc.com:7051 started
+2018-11-27 23:47:32.456 CST [cscc] Init -> INFO 018[0m Init CSCC
+2018-11-27 23:47:32.456 CST [sccapi] deploySysCC -> INFO 019[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+2018-11-27 23:47:32.456 CST [sccapi] deploySysCC -> INFO 01a[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+2018-11-27 23:47:32.457 CST [escc] Init -> INFO 01b[0m Successfully initialized ESCC
+2018-11-27 23:47:32.461 CST [sccapi] deploySysCC -> INFO 01c[0m system chaincode escc/(github.com/hyperledger/fabric/core/scc/escc) deployed
+2018-11-27 23:47:32.461 CST [sccapi] deploySysCC -> INFO 01d[0m system chaincode vscc/(github.com/hyperledger/fabric/core/scc/vscc) deployed
+2018-11-27 23:47:32.462 CST [qscc] Init -> INFO 01e[0m Init QSCC
+2018-11-27 23:47:32.462 CST [sccapi] deploySysCC -> INFO 01f[0m system chaincode qscc/(github.com/hyperledger/fabric/core/chaincode/qscc) deployed
+2018-11-27 23:47:32.462 CST [nodeCmd] initSysCCs -> INFO 020[0m Deployed system chaincodes
+2018-11-27 23:47:32.462 CST [nodeCmd] serve -> INFO 021[0m Starting peer with ID=[name:"peer0.org1.cmbc.com" ], network ID=[dev], address=[peer0.org1.cmbc.com:7051]
+2018-11-27 23:47:32.462 CST [nodeCmd] serve -> INFO 022[0m Started peer with ID=[name:"peer0.org1.cmbc.com" ], network ID=[dev], address=[peer0.org1.cmbc.com:7051]
+2018-11-28 00:30:56.234 CST [nodeCmd] serve -> INFO 001[0m Starting peer:
+ Version: 1.1.0
+ Go version: go1.11.1
+ OS/Arch: linux/amd64
+ Experimental features: false
+ Chaincode:
+  Base Image Version: 0.4.6
+  Base Docker Namespace: hyperledger
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+
+2018-11-28 00:30:56.234 CST [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+2018-11-28 00:30:56.234 CST [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+2018-11-28 00:30:56.254 CST [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+2018-11-28 00:30:56.254 CST [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+2018-11-28 00:30:56.255 CST [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.16.0.4:7051
+2018-11-28 00:30:56.255 CST [peer] func1 -> INFO 007[0m Returning peer0.org1.cmbc.com:7051
+2018-11-28 00:30:56.256 CST [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.16.0.4:7051
+2018-11-28 00:30:56.256 CST [peer] func1 -> INFO 009[0m Returning peer0.org1.cmbc.com:7051
+2018-11-28 00:30:56.263 CST [nodeCmd] computeChaincodeEndpoint -> INFO 00a[0m Entering computeChaincodeEndpoint with peerHostname: peer0.org1.cmbc.com
+2018-11-28 00:30:56.264 CST [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Exit with ccEndpoint: peer0.org1.cmbc.com:7052
+2018-11-28 00:30:56.266 CST [chaincode] NewChaincodeSupport -> INFO 00c[0m Chaincode support using peerAddress: peer0.org1.cmbc.com:7052
+2018-11-28 00:30:56.267 CST [sccapi] registerSysCC -> INFO 00d[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+2018-11-28 00:30:56.267 CST [sccapi] registerSysCC -> INFO 00e[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+2018-11-28 00:30:56.268 CST [sccapi] registerSysCC -> INFO 00f[0m system chaincode escc(github.com/hyperledger/fabric/core/scc/escc) registered
+2018-11-28 00:30:56.268 CST [sccapi] registerSysCC -> INFO 010[0m system chaincode vscc(github.com/hyperledger/fabric/core/scc/vscc) registered
+2018-11-28 00:30:56.268 CST [sccapi] registerSysCC -> INFO 011[0m system chaincode qscc(github.com/hyperledger/fabric/core/chaincode/qscc) registered
+2018-11-28 00:30:56.274 CST [gossip/service] func1 -> INFO 012[0m Initialize gossip with endpoint peer0.org1.cmbc.com:7051 and bootstrap set [127.0.0.1:7051]
+2018-11-28 00:30:56.276 CST [msp] DeserializeIdentity -> INFO 013[0m Obtaining identity
+2018-11-28 00:30:56.282 CST [gossip/discovery] NewDiscoveryService -> INFO 014[0m Started {peer0.org1.cmbc.com:7051 [] [8 245 137 134 86 171 121 137 146 89 80 208 6 125 2 200 41 64 179 70 102 6 9 207 85 193 45 197 210 200 68 243] peer0.org1.cmbc.com:7051 <nil>} incTime is 1543336256281892826
+2018-11-28 00:30:56.282 CST [gossip/gossip] NewGossipService -> INFO 015[0m Creating gossip service with self membership of {peer0.org1.cmbc.com:7051 [] [8 245 137 134 86 171 121 137 146 89 80 208 6 125 2 200 41 64 179 70 102 6 9 207 85 193 45 197 210 200 68 243] peer0.org1.cmbc.com:7051 <nil>}
+2018-11-28 00:30:56.289 CST [eventhub_producer] start -> INFO 016[0m Event processor started
+2018-11-28 00:30:56.292 CST [gossip/gossip] start -> INFO 017[0m Gossip instance peer0.org1.cmbc.com:7051 started
+2018-11-28 00:30:56.294 CST [cscc] Init -> INFO 018[0m Init CSCC
+2018-11-28 00:30:56.294 CST [sccapi] deploySysCC -> INFO 019[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+2018-11-28 00:30:56.294 CST [sccapi] deploySysCC -> INFO 01a[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+2018-11-28 00:30:56.295 CST [escc] Init -> INFO 01b[0m Successfully initialized ESCC
+2018-11-28 00:30:56.295 CST [sccapi] deploySysCC -> INFO 01c[0m system chaincode escc/(github.com/hyperledger/fabric/core/scc/escc) deployed
+2018-11-28 00:30:56.299 CST [sccapi] deploySysCC -> INFO 01d[0m system chaincode vscc/(github.com/hyperledger/fabric/core/scc/vscc) deployed
+2018-11-28 00:30:56.299 CST [qscc] Init -> INFO 01e[0m Init QSCC
+2018-11-28 00:30:56.299 CST [sccapi] deploySysCC -> INFO 01f[0m system chaincode qscc/(github.com/hyperledger/fabric/core/chaincode/qscc) deployed
+2018-11-28 00:30:56.300 CST [nodeCmd] initSysCCs -> INFO 020[0m Deployed system chaincodes
+2018-11-28 00:30:56.300 CST [nodeCmd] serve -> INFO 021[0m Starting peer with ID=[name:"peer0.org1.cmbc.com" ], network ID=[dev], address=[peer0.org1.cmbc.com:7051]
+2018-11-28 00:30:56.300 CST [nodeCmd] serve -> INFO 022[0m Started peer with ID=[name:"peer0.org1.cmbc.com" ], network ID=[dev], address=[peer0.org1.cmbc.com:7051]
+2018-11-28 00:34:58.620 CST [ledgermgmt] CreateLedger -> INFO 023[0m Creating ledger [cmbcchannel666] with genesis block
+2018-11-28 00:34:58.623 CST [fsblkstorage] newBlockfileMgr -> INFO 024[0m Getting block information from block storage
+2018-11-28 00:34:58.645 CST [kvledger] CommitWithPvtData -> INFO 025[0m [cmbcchannel666] Committed block [0] with 1 transaction(s) in 19ms (state_validation=6ms block_commit=8ms state_commit=2ms)
+2018-11-28 00:34:58.647 CST [ledgermgmt] CreateLedger -> INFO 026[0m Created ledger [cmbcchannel666] with genesis block
+2018-11-28 00:34:58.664 CST [gossip/state] NewGossipStateProvider -> INFO 027[0m Updating node metadata information, current ledger sequence is at = 0, next expected block is = 1
+2018-11-28 00:34:58.666 CST [cscc] Init -> INFO 028[0m Init CSCC
+2018-11-28 00:34:58.666 CST [sccapi] deploySysCC -> INFO 029[0m system chaincode cscc/cmbcchannel666(github.com/hyperledger/fabric/core/scc/cscc) deployed
+2018-11-28 00:34:58.666 CST [sccapi] deploySysCC -> INFO 02a[0m system chaincode lscc/cmbcchannel666(github.com/hyperledger/fabric/core/scc/lscc) deployed
+2018-11-28 00:34:58.666 CST [escc] Init -> INFO 02b[0m Successfully initialized ESCC
+2018-11-28 00:34:58.666 CST [sccapi] deploySysCC -> INFO 02c[0m system chaincode escc/cmbcchannel666(github.com/hyperledger/fabric/core/scc/escc) deployed
+2018-11-28 00:34:58.666 CST [sccapi] deploySysCC -> INFO 02d[0m system chaincode vscc/cmbcchannel666(github.com/hyperledger/fabric/core/scc/vscc) deployed
+2018-11-28 00:34:58.666 CST [qscc] Init -> INFO 02e[0m Init QSCC
+2018-11-28 00:34:58.666 CST [sccapi] deploySysCC -> INFO 02f[0m system chaincode qscc/cmbcchannel666(github.com/hyperledger/fabric/core/chaincode/qscc) deployed
+2018-11-28 00:35:04.666 CST [gossip/election] beLeader -> INFO 030[0m [8 245 137 134 86 171 121 137 146 89 80 208 6 125 2 200 41 64 179 70 102 6 9 207 85 193 45 197 210 200 68 243] : Becoming a leader
+2018-11-28 00:35:04.667 CST [gossip/service] func1 -> INFO 031[0m Elected as a leader, starting delivery service for channel cmbcchannel666
+2018-11-28 00:37:02.002 CST [gossip/privdata] StoreBlock -> INFO 032[0m [cmbcchannel666] Received block [1] from buffer
+[33m2018-11-28 00:37:02.018 CST [gossip/gossip] learnAnchorPeers -> WARN 033[0m Got invalid port (0), skipping connecting to anchor peer {peer0.org1.cmbc.com 0}
+[33m2018-11-28 00:37:02.018 CST [gossip/gossip] learnAnchorPeers -> WARN 034[0m Got empty hostname, skipping connecting to anchor peer { 7051}
+2018-11-28 00:37:02.019 CST [committer/txvalidator] Validate -> INFO 035[0m [cmbcchannel666] Validated block [1] in 17ms
+2018-11-28 00:37:02.040 CST [kvledger] CommitWithPvtData -> INFO 036[0m [cmbcchannel666] Committed block [1] with 1 transaction(s) in 20ms (state_validation=7ms block_commit=8ms state_commit=3ms)
+2018-11-28 00:46:36.300 CST [lscc] executeInstall -> INFO 037[0m Installed Chaincode [r_test_cc6] Version [1.0] to peer
+[33m2018-11-28 00:46:52.882 CST [protoutils] ValidateProposalMessage -> WARN 038[0m channel [cmbcchannel]: MSP error: channel doesn't exist
+[31m2018-11-28 00:47:21.021 CST [dockercontroller] Start -> ERRO 039[0m start-could not start container: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+[31m2018-11-28 00:47:21.037 CST [chaincode] Launch -> ERRO 03a[0m launchAndWaitForRegister failed: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+[31m2018-11-28 00:47:21.037 CST [endorser] simulateProposal -> ERRO 03b[0m [cmbcchannel666][2501e46c] failed to invoke chaincode name:"lscc" , error: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+[31m2018-11-28 00:48:34.048 CST [dockercontroller] Start -> ERRO 03c[0m start-could not start container: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+[31m2018-11-28 00:48:34.063 CST [chaincode] Launch -> ERRO 03d[0m launchAndWaitForRegister failed: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+[31m2018-11-28 00:48:34.063 CST [endorser] simulateProposal -> ERRO 03e[0m [cmbcchannel666][38c2091d] failed to invoke chaincode name:"lscc" , error: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+[31m2018-11-28 00:50:15.650 CST [dockercontroller] Start -> ERRO 03f[0m start-could not start container: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+[31m2018-11-28 00:50:15.666 CST [chaincode] Launch -> ERRO 040[0m launchAndWaitForRegister failed: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+[31m2018-11-28 00:50:15.666 CST [endorser] simulateProposal -> ERRO 041[0m [cmbcchannel666][21bb2506] failed to invoke chaincode name:"lscc" , error: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+2018-11-28 00:52:30.225 CST [lscc] executeInstall -> INFO 042[0m Installed Chaincode [r_test_cc7] Version [1.0] to peer
+[31m2018-11-28 00:52:54.444 CST [dockercontroller] Start -> ERRO 043[0m start-could not start container: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+[31m2018-11-28 00:52:54.459 CST [chaincode] Launch -> ERRO 044[0m launchAndWaitForRegister failed: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+[31m2018-11-28 00:52:54.459 CST [endorser] simulateProposal -> ERRO 045[0m [cmbcchannel666][52306a83] failed to invoke chaincode name:"lscc" , error: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+[31m2018-11-28 00:56:29.026 CST [dockercontroller] Start -> ERRO 046[0m start-could not start container: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+[31m2018-11-28 00:56:29.043 CST [chaincode] Launch -> ERRO 047[0m launchAndWaitForRegister failed: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+[31m2018-11-28 00:56:29.043 CST [endorser] simulateProposal -> ERRO 048[0m [cmbcchannel666][c975b317] failed to invoke chaincode name:"lscc" , error: API error (404): {"message":"oci runtime error: container_linux.go:262: starting container process caused \"exec: \\\"chaincode\\\": executable file not found in $PATH\"\n"}
+
+error starting container
+2018-11-28 00:59:54.167 CST [lscc] executeInstall -> INFO 049[0m Installed Chaincode [r_test_cc8] Version [v1] to peer
+[33m2018-11-28 01:00:02.279 CST [protoutils] ValidateProposalMessage -> WARN 04a[0m channel [cmbcchannel]: MSP error: channel doesn't exist
+[33m2018-11-28 01:00:05.491 CST [protoutils] ValidateProposalMessage -> WARN 04b[0m channel [cmbcchannel]: MSP error: channel doesn't exist
+2018-11-28 01:00:39.423 CST [golang-platform] GenerateDockerBuild -> INFO 04c[0m building chaincode with ldflagsOpt: '-ldflags "-linkmode external -extldflags '-static'"'
+2018-11-28 01:00:39.423 CST [golang-platform] GenerateDockerBuild -> INFO 04d[0m building chaincode with tags: 
+2018-11-28 01:01:40.703 CST [gossip/privdata] StoreBlock -> INFO 04e[0m [cmbcchannel666] Received block [2] from buffer
+2018-11-28 01:01:40.704 CST [committer/txvalidator] Validate -> INFO 04f[0m [cmbcchannel666] Validated block [2] in 1ms
+2018-11-28 01:01:40.704 CST [cceventmgmt] HandleStateUpdates -> INFO 050[0m Channel [cmbcchannel666]: Handling LSCC state update for chaincode [r_test_cc8]
+2018-11-28 01:01:40.724 CST [kvledger] CommitWithPvtData -> INFO 051[0m [cmbcchannel666] Committed block [2] with 1 transaction(s) in 19ms (state_validation=0ms block_commit=13ms state_commit=3ms)
+2018-11-28 01:02:22.038 CST [gossip/privdata] StoreBlock -> INFO 052[0m [cmbcchannel666] Received block [3] from buffer
+2018-11-28 01:02:22.039 CST [committer/txvalidator] Validate -> INFO 053[0m [cmbcchannel666] Validated block [3] in 1ms
+2018-11-28 01:02:22.058 CST [kvledger] CommitWithPvtData -> INFO 054[0m [cmbcchannel666] Committed block [3] with 1 transaction(s) in 18ms (state_validation=0ms block_commit=14ms state_commit=2ms)
+2018-11-28 01:02:44.264 CST [gossip/privdata] StoreBlock -> INFO 055[0m [cmbcchannel666] Received block [4] from buffer
+2018-11-28 01:02:44.266 CST [committer/txvalidator] Validate -> INFO 056[0m [cmbcchannel666] Validated block [4] in 1ms
+2018-11-28 01:02:44.285 CST [kvledger] CommitWithPvtData -> INFO 057[0m [cmbcchannel666] Committed block [4] with 1 transaction(s) in 18ms (state_validation=0ms block_commit=14ms state_commit=1ms)
+[31m2018-11-28 01:03:20.856 CST [endorser] ProcessProposal -> ERRO 058[0m [cmbcchannel666][100a6ed8] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: 100a6ed898bf74a11f48bab612d07d0250893ad059682340106c38717cdf2ef5
+[31m2018-11-28 01:03:28.487 CST [endorser] ProcessProposal -> ERRO 059[0m [cmbcchannel666][97fa705d] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: 97fa705d452e62aaee8b6b9165fecc9f1eca47200ada1354cf080be86544c40b
+[31m2018-11-28 01:04:13.244 CST [endorser] ProcessProposal -> ERRO 05a[0m [cmbcchannel666][a34a63ff] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: a34a63fff8e2bc85e20008352efd5a3225492b7df9f24562d57d88fb37d770d7
+2018-11-28 01:04:18.331 CST [gossip/privdata] StoreBlock -> INFO 05b[0m [cmbcchannel666] Received block [5] from buffer
+2018-11-28 01:04:18.332 CST [committer/txvalidator] Validate -> INFO 05c[0m [cmbcchannel666] Validated block [5] in 1ms
+2018-11-28 01:04:18.345 CST [kvledger] CommitWithPvtData -> INFO 05d[0m [cmbcchannel666] Committed block [5] with 1 transaction(s) in 13ms (state_validation=0ms block_commit=8ms state_commit=2ms)
+2018-11-28 01:04:26.455 CST [gossip/privdata] StoreBlock -> INFO 05e[0m [cmbcchannel666] Received block [6] from buffer
+2018-11-28 01:04:26.456 CST [committer/txvalidator] Validate -> INFO 05f[0m [cmbcchannel666] Validated block [6] in 1ms
+2018-11-28 01:04:26.473 CST [kvledger] CommitWithPvtData -> INFO 060[0m [cmbcchannel666] Committed block [6] with 1 transaction(s) in 17ms (state_validation=0ms block_commit=12ms state_commit=2ms)
+2018-11-28 01:04:35.162 CST [gossip/privdata] StoreBlock -> INFO 061[0m [cmbcchannel666] Received block [7] from buffer
+2018-11-28 01:04:35.163 CST [committer/txvalidator] Validate -> INFO 062[0m [cmbcchannel666] Validated block [7] in 1ms
+2018-11-28 01:04:35.178 CST [kvledger] CommitWithPvtData -> INFO 063[0m [cmbcchannel666] Committed block [7] with 1 transaction(s) in 15ms (state_validation=0ms block_commit=10ms state_commit=2ms)
+2018-11-28 01:04:40.413 CST [gossip/privdata] StoreBlock -> INFO 064[0m [cmbcchannel666] Received block [8] from buffer
+2018-11-28 01:04:40.414 CST [committer/txvalidator] Validate -> INFO 065[0m [cmbcchannel666] Validated block [8] in 1ms
+2018-11-28 01:04:40.429 CST [kvledger] CommitWithPvtData -> INFO 066[0m [cmbcchannel666] Committed block [8] with 1 transaction(s) in 14ms (state_validation=0ms block_commit=10ms state_commit=1ms)
+[33m2018-11-28 01:05:00.459 CST [protoutils] ValidateProposalMessage -> WARN 067[0m channel [cmbcchannel]: MSP error: channel doesn't exist
+2018-11-28 01:06:04.677 CST [gossip/privdata] StoreBlock -> INFO 068[0m [cmbcchannel666] Received block [9] from buffer
+2018-11-28 01:06:04.678 CST [committer/txvalidator] Validate -> INFO 069[0m [cmbcchannel666] Validated block [9] in 1ms
+2018-11-28 01:06:04.694 CST [kvledger] CommitWithPvtData -> INFO 06a[0m [cmbcchannel666] Committed block [9] with 1 transaction(s) in 15ms (state_validation=0ms block_commit=11ms state_commit=2ms)
