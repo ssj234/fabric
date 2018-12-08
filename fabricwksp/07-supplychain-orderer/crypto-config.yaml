@@ -1,0 +1,24 @@
+OrdererOrgs:
+    - Name: Orderer
+      Domain: jianshu.com
+      Specs:
+            - Hostname: orderer
+PeerOrgs:
+    - Name: Core
+      Domain: core.jianshu.com
+      Template:
+            Count: 2
+      Users:
+            Count: 2
+    - Name: Supplier
+      Domain: supplier.jianshu.com
+      Template:
+          Count: 2
+      Users:
+          Count: 2
+    - Name: Bank
+      Domain: bank.jianshu.com
+      Template:
+          Count: 2
+      Users:
+          Count: 2

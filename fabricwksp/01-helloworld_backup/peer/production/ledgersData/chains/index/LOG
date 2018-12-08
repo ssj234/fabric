@@ -1,0 +1,46 @@
+=============== Nov 27, 2018 (CST) ===============
+15:58:33.666057 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:58:33.670771 db@open opening
+15:58:33.675336 version@stat F·[] S·0B[] Sc·[]
+15:58:33.681265 db@janitor F·2 G·0
+15:58:33.681292 db@open done T·10.500593ms
+=============== Nov 27, 2018 (CST) ===============
+16:25:00.994226 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:25:00.994325 version@stat F·[] S·0B[] Sc·[]
+16:25:00.994332 db@open opening
+16:25:00.994379 journal@recovery F·1
+16:25:00.996334 journal@recovery recovering @1
+16:25:01.004502 version@stat F·[] S·0B[] Sc·[]
+16:25:01.013955 db@janitor F·2 G·0
+16:25:01.013986 db@open done T·19.646729ms
+=============== Nov 27, 2018 (CST) ===============
+17:15:03.594361 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:15:03.594453 version@stat F·[] S·0B[] Sc·[]
+17:15:03.594466 db@open opening
+17:15:03.594510 journal@recovery F·1
+17:15:03.598518 journal@recovery recovering @2
+17:15:03.605050 memdb@flush created L0@4 N·14 S·376B "cmb..a\x00\x00,v4":"cmb..l\x00v,v6"
+17:15:03.606304 version@stat F·[1] S·376B[376B] Sc·[0.25]
+17:15:03.612989 db@janitor F·3 G·0
+17:15:03.613008 db@open done T·18.536327ms
+=============== Nov 27, 2018 (CST) ===============
+19:47:57.596652 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:47:57.598409 version@stat F·[1] S·376B[376B] Sc·[0.25]
+19:47:57.598423 db@open opening
+19:47:57.598485 journal@recovery F·1
+19:47:57.600446 journal@recovery recovering @5
+19:47:57.603652 memdb@flush created L0@7 N·1 S·140B "cmb..nfo,v16":"cmb..nfo,v16"
+19:47:57.612067 version@stat F·[2] S·516B[516B] Sc·[0.50]
+19:47:57.618538 db@janitor F·4 G·0
+19:47:57.618557 db@open done T·20.127962ms
+=============== Nov 27, 2018 (CST) ===============
+22:10:00.066858 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:10:00.067596 skipping CURRENT.bak: invalid file num: strconv.ParseInt: parsing "bak": invalid syntax
+22:10:00.067688 version@stat F·[2] S·516B[516B] Sc·[0.50]
+22:10:00.067696 db@open opening
+22:10:00.067761 journal@recovery F·1
+22:10:00.079832 journal@recovery recovering @8
+22:10:00.083870 memdb@flush created L0@10 N·1 S·140B "cmb..nfo,v18":"cmb..nfo,v18"
+22:10:00.085162 version@stat F·[3] S·656B[656B] Sc·[0.75]
+22:10:00.085514 db@janitor F·5 G·0
+22:10:00.085554 db@open done T·17.838026ms

@@ -1,0 +1,17 @@
+{
+    "name": "fabric-sdk-node-study",
+    "version": "0.0.1",
+    "description": "fabric-sdk-node-study",
+    "main": "main.js",
+    "keywords": [],
+    "engines": {
+        "node": ">=8.0.0",
+        "npm": ">=3.10.10"
+    },
+    "dependencies": {
+        "fabric-ca-client": "^1.0.0",
+        "fabric-client": "^1.0.0",
+        "express": "^4.15.2"
+    },
+    "license": "Apache-2.0"
+}
