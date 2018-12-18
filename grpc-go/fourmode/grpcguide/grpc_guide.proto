@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+
+package grpcguide;
+
+
+message Point {
+    int32 latitude = 1;
+    int32 longitude = 2;
+}
+
+message Rectangle {
+    // 矩形的点1
+    Point lo = 1;
+    // 矩形的点2
+    Point hi = 2;
+}
+
+message Feature {
+    // feature名称
+    string name = 1;
+    // feature所在点
+    Point location = 2;
+}
+
+message RouteNote {
+    // 发送消息的位置
+    Point location = 1;
+    // 消息
+    string message = 2;
+}
+
+message RouteSummary {
+    // 接受到点的数量
+    int32 point_count = 1;
+    // 在feater中的数量
+    int32 feature_count = 2;
+    // 距离
+    int32 distance = 3;
+    // 时间
+    int32 elapsed_time = 4;
+}
+
+
+service RouteGuide {
+    rpc GetFeature(Point) returns (Feature){}
+    rpc ListFeatures(Rectangle) returns (stream Feature){}
+    rpc RecordRoute(stream Point) returns (RouteSummary){}
+    rpc RouteChat(stream RouteNote) returns (stream RouteNote){}
+}
